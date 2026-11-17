@@ -6,7 +6,7 @@
 #include <vector>
 using namespace std;
 
-// Class to store each commit
+
 class CommitNode {
 private:
     int commitID;
@@ -16,7 +16,7 @@ private:
     CommitNode* next;
 
 public:
-    // Constructor
+   
     CommitNode(int id, string msg, vector<string> f) {
         commitID = id;
         message = msg;
