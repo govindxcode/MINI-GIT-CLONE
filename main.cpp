@@ -48,7 +48,7 @@ public:
         isInitialized = false;
     }
 
-    // Initialize repository
+    //initialize repo
     void init() {
         if (isInitialized) {
             cout << "Repository already initialized.\n";
