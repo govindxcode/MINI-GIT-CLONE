@@ -29,7 +29,7 @@ public:
     friend class Repository;
 };
 
-// Main repository class
+//main class
 class Repository {
 private:
     queue<string> stagingArea;
