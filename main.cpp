@@ -244,7 +244,7 @@ public:
     }
 };
 
-// Display menu
+//menu
 class Menu {
 public:
     void showMenu() {
