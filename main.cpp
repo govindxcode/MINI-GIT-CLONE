@@ -161,6 +161,8 @@ public:
     }
 
     // Undo last recorded action
+    //Stack stores the last commit on the top and deletes the top when we want to undo any last commit.
+
     void undo() {
         if (undoStack.empty()) {
             cout << "No actions to undo.\n";
@@ -233,6 +235,7 @@ public:
     }
 
     // Destructor
+    //Every time a new commit is made a new node is created, created a destructor to free up the memory allocated in heap to avoid memory leaks
     ~Repository() {
         CommitNode* current = head;
 
