@@ -233,6 +233,25 @@ public:
             current = current->next;
         }
     }
+    // NEW FUNCTIONALITY : Clear staged files from the staging area
+    void clearStaging() {
+        if (!isInitialized) {
+            cout << "Run init first.\n";
+            return;
+        }
+
+        if (stagingArea.empty()) {
+            cout << "Staging area is already empty.\n";
+            return;
+        }
+
+        while (!stagingArea.empty()) {
+            stagingArea.pop();
+        }
+
+        undoStack.push("clear");
+        cout << "Staging area cleared.\n";
+    }
 
     // Destructor
     //Every time a new commit is made a new node is created, created a destructor to free up the memory allocated in heap to avoid memory leaks
@@ -259,8 +278,10 @@ public:
         cout << "5. push\n";
         cout << "6. status\n";
         cout << "7. log\n";
-        cout << "8. exit\n";
+        cout << "8. clear\n";
+        cout<<"9. exit\n";
         cout << "Enter choice: ";
+        
     }
 };
 
