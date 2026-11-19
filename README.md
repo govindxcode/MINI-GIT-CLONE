@@ -16,3 +16,14 @@ The project is structured into three main classes (CommitNode, Repository, and M
 •	Stack (std::stack<string>): Used for undoStack to track user operations (init, add, commit) in LIFO (Last-In, First-Out) order.
 •	File Handling (<fstream>): Writes repository initialization state to .minigit_config.txt and exports commit logs to .minigit_remote.txt on push.
 
+**Data Structures & OOP Design**
+The project is structured into three main classes (CommitNode, Repository, and Menu) using standard C++ libraries:
+
+Doubly Linked List (CommitNode): Stores the commit history. Each node holds a commitID, message, a vector<string> of committed files, and prev/next pointers, with head and tail tracked by Repository.
+
+Queue (std::queue<string>): Used for the stagingArea so files are processed and committed in FIFO (First-In, First-Out) order.
+
+Stack (std::stack<string>): Used for undoStack to track user operations (init, add, commit) in LIFO (Last-In, First-Out) order.
+
+File Handling (<fstream>): Writes repository initialization state to .minigit_config.txt and exports commit logs to .minigit_remote.txt on push.
+
