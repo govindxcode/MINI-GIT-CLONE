@@ -1,4 +1,4 @@
-Mini-Git
+                                                                  Mini-Git
 Mini-Git is a menu-driven command-line version control system built in C++. We created this project for our Project-Based Learning (PBL) coursework to simulate how Git manages staging areas, commit histories, status checks, and remote pushes using core data structures and file handling.
 Features
 •	1. init: Initializes the repository and creates a .minigit_config.txt configuration file.
