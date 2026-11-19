@@ -331,6 +331,10 @@ int main() {
                 break;
 
             case 8:
+                repo.clearStaging();
+                break;
+
+            case 9:
                 cout << "Exiting...\n";
                 return 0;
 
