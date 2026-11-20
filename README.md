@@ -9,7 +9,8 @@ Features
 •	6. status: Displays files currently waiting in the staging area along with the latest Commit ID.
 •	7. log: Traverses and prints the full commit history (Commit ID, message, and committed files).
 8. `clear`**: Clears all staged files from the staging area queue without committing them.
-•	9. exit: Cleanly exits the CLI and frees allocated commit memory.
+•	9. version: The command will display the current Mini-Git version and project information..
+•	10. exit: Cleanly exits the CLI and frees allocated commit memory.
 Data Structures & OOP Design
 The project is structured into three main classes (CommitNode, Repository, and Menu) using standard C++ libraries:
 •	Doubly Linked List (CommitNode): Stores the commit history. Each node holds a commitID, message, a vector<string> of committed files, and prev/next pointers, with head and tail tracked by Repository.
