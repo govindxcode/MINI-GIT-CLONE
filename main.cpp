@@ -252,6 +252,15 @@ public:
         undoStack.push("clear");
         cout << "Staging area cleared.\n";
     }
+    void version() {
+        cout << "\n===== Mini-Git Version =====\n";
+        cout << "Mini-Git Version: 1.0.0\n";
+        cout << "Project: Mini-Git CLI\n";
+        cout << "Language: C++\n";
+        cout << "Developer: Shantanu\n";
+        cout << "Status: Running Successfully\n";
+    }
+
 
     // Destructor
     //Every time a new commit is made a new node is created, created a destructor to free up the memory allocated in heap to avoid memory leaks
