@@ -288,7 +288,8 @@ public:
         cout << "6. status\n";
         cout << "7. log\n";
         cout << "8. clear\n";
-        cout<<"9. exit\n";
+        cout<<"9. verison\n";
+        cout<<"10. exit\n";
         cout << "Enter choice: ";
         
     }
@@ -343,7 +344,11 @@ int main() {
                 repo.clearStaging();
                 break;
 
-            case 9:
+             case 9:
+                repo.version();
+                break;
+
+            case 10:
                 cout << "Exiting...\n";
                 return 0;
 
