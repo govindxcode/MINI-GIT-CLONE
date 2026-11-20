@@ -47,7 +47,7 @@ public:
         undoStack.push("add " + filename);
 
         cout << "Added: " << filename << "\n";
-    }
+   }
 };
 
 class Menu {
